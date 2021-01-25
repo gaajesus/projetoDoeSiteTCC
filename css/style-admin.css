@@ -1,0 +1,395 @@
+/* NAVBAR */
+.navbar {
+  padding: 45px 0;
+  transition: all 0.5s ease-in-out;
+  width: 100%;
+}
+.buttons {
+  padding-left: 630px;
+}
+.vesco-nav-wrapper {
+  padding: 0 85px;
+}
+
+.navbar-nav {
+  float: right;
+  margin-left: 50%;
+}
+.navbar-nav > li > a {
+  color: #fd0044;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  padding-right: 200px;
+}
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {
+  background: none;
+  color: white;
+}
+.navbar-toggle {
+  background-color: orangered;
+  border: 1px solid white;
+  border-radius: 0;
+}
+.navbar-collapsed {
+  max-height: none !important;
+}
+.topo {
+  /*background: rgba(202, 51, 152, 0.9);*/
+  background: rgb(254, 68, 114, 0.85);
+  padding: 10px 0;
+}
+.navbar {
+  align-items: center;
+  justify-content: center;
+}
+.nav-item a{
+  float: left;
+  height: 50px;
+  padding: 15px 15px;
+  font-size: 18px;
+  line-height: 20px;
+  position: relative;
+}
+.logo{
+  margin-left: 5%;
+}
+/* FIM NAVBAR */
+/* BOTÕES NAVBAR */
+
+.nav-item {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 30px;
+}
+.nav-item a {
+  width: 120px;
+  height: 50px;
+  background-color: transparent;
+  margin: 5px;
+  color: white; /* COR DA FONTE DOS NOME DA NAVBAR */
+  position: relative;
+  overflow: hidden;
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+}
+.nav-item a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: white; /* BARRA DE CIMA DO HOVER */
+  transition: all 0.3s 0.2s ease;
+  left: 0;
+  top: 0;
+  outline: 0;
+}
+.nav-item a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: white; /* BARRA DE BAIXO DO HOVER */
+  transition: all 0.3s ease;
+  right: 0;
+  bottom: 0;
+  outline: 0;
+}
+.nav-item a> p {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  font-family: Tahoma;
+}
+.nav-item a >p:before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 0px;
+  background-color: white; /* BARRO DO DIREITO LADO DO HOVER */
+  transition: all 0.3s 0.2s ease;
+  right: 0;
+  top: 0;
+}
+.nav-item a>p:after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 0;
+  background-color: white; /* BARRO DO ESQUERDO LADO DO HOVER */
+  transition: all 0.3s ease;
+  left: 0;
+  bottom: 0;
+}
+.nav-item a:hover {
+  color: white; /* HOVER DA FONTE */
+  letter-spacing: 2px;
+  outline: 0;
+}
+.nav-item a:hover:before,
+.nav-item a:hover:after {
+  width: 100%;
+  outline: 0;
+}
+.nav-item a:hover p {
+  z-index: 1;
+  outline: 0;
+}
+.nav-item a:hover p:before,
+.nav-item a:hover p:after {
+  height: 100%;
+  outline: 0;
+}
+
+
+body {
+  background-color: #262431;
+  height: 2000px;
+}
+li {
+  list-style-type: none;
+}
+.cad-step-one {
+  position: relative;
+  margin-left: 16.4%;
+  margin-top: -5.5%;
+}
+.cad-step-two {
+  position: relative;
+  margin-left: 55%;
+    margin-top: -39%;
+}
+.cad-step-three {
+  position: relative;
+  border-radius: 30px;
+  margin-left: -6%;
+  height: 7%;
+    margin-top: 5%;
+}
+.input-one {
+  border-radius: 5px;
+  outline: 0;
+  width: 220px;
+  height: 42px;
+  padding: 5px;
+}
+input:focus {
+  border: 3px solid #e4648c;
+}
+
+.img-logo{
+    width: 20%;
+}
+
+/* @import url(https://fonts.googleapis.com/css?family=Raleway:800, 400); */
+
+.button {
+position: relative;
+	height: 60px;
+	width: 200px;
+	background: #e4648c;
+	border-radius: 8px;
+	text-align: center;
+	margin-top: 120px;
+	cursor: pointer;
+	overflow: hidden;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+#imagem{
+  margin-left: 94.6%; 
+  margin-top:2.3%; 
+  position: relative;
+}
+.submit,
+.arrow {
+  display: inline-block;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.submit {
+  text-transform: uppercase;
+  margin: 14px 0 0 26px;
+}
+
+.arrow {
+  position: relative;
+  top: -3px;
+  opacity: 0;
+}
+
+.line {
+  height: 3px;
+  width: 20px;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.top {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.bottom {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  margin-top: 10px;
+}
+
+.button {
+  animation-name: move-down-to-top;
+  animation-duration: 1s;
+}
+.button:active {
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+.button.hover .submit {
+  -webkit-transform: translateX(-90px);
+  -moz-transform: translateX(-90px);
+  transform: translateX(-90px);
+  opacity: 0;
+}
+
+.button.hover .arrow {
+  -webkit-transform: translateX(-70px);
+  -moz-transform: translateX(-70px);
+  transform: translateX(-70px);
+  opacity: 1;
+}
+
+.button.active .arrow {
+  opacity: 1;
+  -webkit-transform: rotate(90deg) translateY(70px);
+  -moz-transform: rotate(90deg) translateY(70px);
+  transform: rotate(90deg) translateY(70px);
+}
+
+.button.active {
+  background: #e4648c;
+}
+
+.button.active .submit {
+  opacity: 0;
+}
+
+.button.active .top {
+  width: 34px;
+}
+
+.button.active .bottom {
+  margin: 14px 0 0 12px;
+}
+.espaco {
+  padding: 40px;
+  background-color: #2f2c3d;
+  margin-left: -380px;
+  position: relative;
+}
+
+.a {
+  color: white;
+    margin-left: 2.8%;
+}
+.navbar-brand {
+  margin-left: -95px;
+}
+h3 {
+  color: white;
+}
+.js .anime-left-to-center {
+  opacity: 0;
+  transform: translate3D(-700px, 0px, 0px);
+}
+.js .anime-right-to-center {
+  opacity: 0;
+  transform: translate3D(1300px, 0px, 0px);
+}
+.js .anime-init {
+  opacity: 1;
+  transform: translate3D(0px, 0px, 0px);
+  transition: 0.9s all ease;
+}
+@keyframes move-down-to-top {
+  from {
+    transform: translateY(500%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+@keyframes move-top-to-down {
+  from {
+    transform: translateY(-500%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+.textoCad {
+  position: relative;
+  margin-left: 38.7%;
+  animation-name: move-top-to-down;
+  animation-duration: 1s;
+}
+.form {
+  background-color: #2f2c3d;
+  height: 27.6%;
+    margin-top: 0.6%;
+  position: relative;
+  width: 45%;
+  margin-left: 27%;
+    position: relative;
+   
+}
+.button {
+  transition-duration: 0.4s;
+  position: relative;
+  margin-left: 40%;
+    margin-top: 4%;
+}
+
+.button:hover {
+  background-color: #e4648c;
+  color: white;
+}
+input[type="submit"] {
+  font-size: 20px;
+}
+.container2 {
+  position: relative;
+}
+.footer {
+  background-color: #2f2c3d;
+  position: relative;
+  top: 200px;
+  height: 120px;
+}
+
+.essencial{
+    margin-top: 11%;
+}
+

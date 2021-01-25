@@ -1,0 +1,568 @@
+body {
+  height: 2000px;
+  width: 100%;
+  overflow-x: hidden;
+}
+/* NAVBAR */
+.navbar {
+  padding: 45px 0;
+  transition: all 0.5s ease-in-out;
+  width: 100%;
+}
+.vesco-nav-wrapper {
+  padding: 0 85px;
+}
+
+.navbar-nav {
+  float: right;
+  margin-left: 50%;
+}
+.navbar-nav > li > a {
+  color: #fd0044;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  padding-right: 200px;
+}
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {
+  background: none;
+  color: white;
+}
+.navbar-toggle {
+  background-color: orangered;
+  border: 1px solid white;
+  border-radius: 0;
+}
+.navbar-collapsed {
+  max-height: none !important;
+}
+.topo {
+  /*background: rgba(202, 51, 152, 0.9);*/
+  background: rgb(254, 68, 114, 0.85);
+  padding: 10px 0;
+}
+.navbar {
+  align-items: center;
+  justify-content: center;
+}
+.nav-item a{
+  float: left;
+  height: 50px;
+  padding: 15px 15px;
+  font-size: 18px;
+  line-height: 20px;
+  position: relative;
+}
+.logo{
+  margin-left: 5%;
+}
+/* FIM NAVBAR */
+/* BOTÕES NAVBAR */
+
+.nav-item {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 30px;
+}
+.nav-item a {
+  width: 120px;
+  height: 50px;
+  background-color: transparent;
+  margin: 5px;
+  color: white; /* COR DA FONTE DOS NOME DA NAVBAR */
+  position: relative;
+  overflow: hidden;
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+}
+.nav-item a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: white; /* BARRA DE CIMA DO HOVER */
+  transition: all 0.3s 0.2s ease;
+  left: 0;
+  top: 0;
+  outline: 0;
+}
+.nav-item a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: white; /* BARRA DE BAIXO DO HOVER */
+  transition: all 0.3s ease;
+  right: 0;
+  bottom: 0;
+  outline: 0;
+}
+.nav-item a> p {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  font-family: Tahoma;
+}
+.nav-item a >p:before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 0px;
+  background-color: white; /* BARRO DO DIREITO LADO DO HOVER */
+  transition: all 0.3s 0.2s ease;
+  right: 0;
+  top: 0;
+}
+.nav-item a>p:after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 0;
+  background-color: white; /* BARRO DO ESQUERDO LADO DO HOVER */
+  transition: all 0.3s ease;
+  left: 0;
+  bottom: 0;
+}
+.nav-item a:hover {
+  color: white; /* HOVER DA FONTE */
+  letter-spacing: 2px;
+  outline: 0;
+}
+.nav-item a:hover:before,
+.nav-item a:hover:after {
+  width: 100%;
+  outline: 0;
+}
+.nav-item a:hover p {
+  z-index: 1;
+  outline: 0;
+}
+.nav-item a:hover p:before,
+.nav-item a:hover p:after {
+  height: 100%;
+  outline: 0;
+}
+
+/* BOTÃO DOWNLOAD */
+.buttons2 {
+  display: flex;
+  justify-content: space-around;
+  
+}
+.buttons2 button {
+  width: 400px;
+  height: 140px;
+  background-color: transparent;
+  color: white; /* COR DA FONTE */
+  position: relative;
+  overflow: hidden;
+  font-size: 11px;
+  letter-spacing: 3px;
+  font-size: 30px;
+  font-weight: 510;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+}
+.buttons2 button:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 4px;
+  background-color: rgb(252, 91, 32); /* BARRA DE CIMA DO HOVER */
+  transition: all 0.3s 0.2s ease;
+  left: 0;
+  top: 0;
+  outline: 0;
+}
+.buttons2 button:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: rgb(252, 91, 32); /* BARRA DE BAIXO DO HOVER */
+  transition: all 0.3s ease;
+  right: 0;
+  bottom: 0;
+  outline: 0;
+}
+.buttons2 button p {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  font-family: Tahoma;
+}
+.buttons2 button p:before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 0px;
+  background-color: rgb(252, 91, 32); /* BARRO DO LADO DIREITO DO HOVER */
+  transition: all 0.3s 0.2s ease;
+  right: 0;
+  top: 0;
+}
+.buttons2 button p:after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 0;
+  background-color: rgb(252, 91, 32); /* BARRO DO LADO ESQUERDO DO HOVER */
+  transition: all 0.3s ease;
+  left: 0;
+  bottom: 0;
+}
+.buttons2 button:hover {
+  color: rgba(253, 118, 69, 0.932); /* HOVER DA FONTE */
+  letter-spacing: 8px;
+  outline: 0px;
+}
+.buttons2 button:hover:before,
+.buttons2 button:hover:after {
+  width: 100%;
+  outline: 0;
+}
+.buttons2 button:hover p {
+  z-index: 1;
+  outline: 0;
+}
+.buttons2 button:hover p:before,
+.buttons2 button:hover p:after {
+  height: 100%;
+  outline: 0px;
+}
+.buttons2 {
+  padding-left: 630px;
+}
+.espaco {
+  padding: 40px;
+  background-color: #262431;
+}
+.video {
+  width: 705px;
+  height: 560px;
+  background-color: #262431;    
+}
+.video img {
+  align-items: left;
+  animation-name: move-left-to-center;
+  animation-duration: 1s;
+}
+.video iframe {
+  width: 33%;
+  height: 41%;
+  position:absolute;
+  left: 2%;
+top: 88%;
+  z-index: 0;
+  animation-name: move-left-to-center;
+  animation-duration: 1s;
+}
+.texto {
+  position: relative;
+  bottom: 586px;
+  margin-left: 705px;
+  height: 585px;
+  background-color: #262431;
+}
+.textoVideo {
+  animation-name: move-right-to-center;
+  animation-duration: 1s;
+}
+.espaco2 {
+  padding: 40px;
+  background-color: #262431;
+  position: relative;
+  bottom: 590px;
+}
+.download {
+  position: relative;
+  bottom: 590px;
+  background-color: #2f2c3d;
+  height: 640px;
+}
+.lugarBotao {
+  position: absolute;
+  position: relative;
+  top: 350px;
+  margin-left: -1410px;
+  animation-name: move-left-to-center;
+  animation-duration: 0.68s;
+}
+.tresCel {
+  height: 500px;
+  width: 500px;
+}
+.imgDownload {
+  position: absolute;
+  margin-left: 850px;
+  top: 90px;
+  animation-name: move-right-to-center;
+  animation-duration: 1s;
+}
+.team-area {
+  background-color: #262431;
+  position: relative;
+  height: 200px;
+  bottom: 660px;
+}
+.lugarTexto {
+  position: absolute;
+  margin-left: 140px;
+  top: 200px;
+  color: aqua;
+  animation-name: move-left-to-center;
+  animation-duration: 1s;
+}
+.fotos {
+  height: 180px;
+  background-color: #262431;
+}
+.profile1 img {
+  height: 100px;
+  border-radius: 100%;
+  position: absolute;
+  margin-left: 2.5%;
+  bottom: 80px;
+}
+.profile2 img {
+  height: 100px;
+  border-radius: 100%;
+  position: absolute;
+  margin-left: 14.5%;
+  bottom: 80px;
+}
+.profile3 img {
+  height: 100px;
+  border-radius: 100%;
+  position: absolute;
+  margin-left: 27%;
+  bottom: 80px;
+}
+.profile4 img {
+  height: 100px;
+  border-radius: 100%;
+  position: absolute;
+  margin-left: 39.5%;
+  bottom: 80px;
+}
+.profile5 img {
+  height: 100px;
+  border-radius: 100%;
+  position: absolute;
+  margin-left: 52%;
+  bottom: 80px;
+}
+.profile6 img {
+  height: 100px;
+  border-radius: 100%;
+  position: absolute;
+  margin-left: 64.5%;
+  bottom: 80px;
+}
+.profile7 img {
+  height: 100px;
+  border-radius: 100%;
+  position: absolute;
+  margin-left: 77%;
+  bottom: 80px;
+}
+.profile8 img {
+  height: 100px;
+  border-radius: 100%;
+  position: absolute;
+  margin-left: 89.5%;
+  bottom: 80px;
+}
+.profile1 p {
+  position: absolute;
+  margin-left: 2.3%;
+  top: 150px;
+  color: white;
+}
+.profile1 p:hover {
+  color:  orangered;
+}
+.profile2 p {
+  position: absolute;
+  margin-left: 14.3%;
+  top: 150px;
+  color: white;
+}
+.profile2 p:hover {
+  color:  orangered;
+}
+.profile3 p {
+  position: absolute;
+  margin-left: 26.3%;
+  top: 150px;
+  color: white;
+}
+.profile3 p:hover {
+  color:  orangered;
+}
+.profile4 p {
+  position: absolute;
+  margin-left: 38.9%;
+  top: 150px;
+  color: white;
+}
+.profile4 p:hover {
+  color:  orangered;
+}
+.profile5 p {
+  position: absolute;
+  margin-left: 51.6%;
+  top: 150px;
+  color: white;
+}
+.profile5 p:hover {
+  color:  orangered;
+}
+.profile6 p {
+  position: absolute;
+  margin-left: 64.4%;
+  top: 150px;
+  color: white;
+}
+.profile6 p:hover {
+  color:  orangered;
+}
+.profile7 p {
+  position: absolute;
+  margin-left: 76.9%;
+  top: 150px;
+  color: white;
+}
+.profile7 p:hover {
+  color:  orangered;
+}
+.profile8 p {
+  position: absolute;
+  margin-left: 89.4%;
+  top: 150px;
+  color: white;
+}
+.profile8 p:hover {
+  color:  orangered;
+}
+.espaco3 {
+  padding: 40px;
+  background-color: #262431;
+  position: relative;
+  bottom: 600px;
+}
+.sobre {
+  position: relative;
+  bottom: 640px;
+  background-color: #262431;
+}
+.espaco4 {
+  padding: 40px;
+  background-color: #262431;
+  position: relative;
+  bottom: 650px;
+}
+li {
+  list-style-type: none;
+}
+.footer {
+  background-color: #2f2c3d;
+  position: relative;
+  bottom: 660px;
+  height: 390px;
+}
+.a {
+  color: white;
+}
+.espaco5 {
+  padding: 40px;
+  background-color: #2f2c3d;
+  position: relative;
+  bottom: 660px;
+}
+.carousel img {
+  width: 100%;
+  height: 650px;
+}
+.js .anime-left-to-center {
+  opacity: 0;
+  transform: translate3D(-700px, 0px, 0px);
+}
+.js .anime-right-to-center {
+  opacity: 0;
+  transform: translate3D(700px, 0px, 0px);
+}
+.js .anime-init {
+  opacity: 1;
+  transform: translate3D(0px, 0px, 0px);
+  transition: 0.9s all ease;
+}
+
+@media (max-width:375px) and (min-width: 319px)
+{
+  .video {
+    width: 0px!important;
+    background-color: #262431;    
+  }
+}
+
+@media (max-width:425px) and (min-width: 375px)
+{
+  .video {
+    width: 0px;
+    background-color: #262431;    
+  }
+}
+
+@media (max-width:768px) and (min-width: 425px)
+{
+  .video {
+    width: 0px;
+    background-color: #262431;    
+  }
+}
+
+@media (max-width:1024px) and (min-width: 768px)
+{
+
+}
+
+@media (max-width:1440px) and (min-width: 1024px)
+{
+
+}
+
+@media (max-width:2560px) and (min-width: 1440px)
+{
+
+}
+
+
+
